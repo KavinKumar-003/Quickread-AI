@@ -1,0 +1,241 @@
+{
+  "_meta": {
+    "note": "Reference ranges below are standard, widely-published adult reference intervals (the same kind printed on the side of any lab report) and can vary slightly between laboratories, instruments, and populations. This file is for general health-literacy purposes only and is NOT a diagnostic tool. A lab report should always be interpreted by a qualified doctor who knows the patient's full clinical picture.",
+    "version": "1.0"
+  },
+  "tests": [
+    {
+      "test_id": "hba1c",
+      "display_name": "HbA1c (Glycated Hemoglobin)",
+      "category": "Diabetes / Blood Sugar",
+      "aliases": ["hba1c", "hb a1c", "glycated hemoglobin", "glycosylated hemoglobin", "a1c"],
+      "unit": "%",
+      "ranges": [
+        {"label": "Normal", "min": 0, "max": 5.6, "status": "normal"},
+        {"label": "Prediabetes range", "min": 5.7, "max": 6.4, "status": "borderline"},
+        {"label": "Diabetes range", "min": 6.5, "max": 999, "status": "high"}
+      ],
+      "plain_language": "HbA1c shows your average blood sugar level over the last 2-3 months. Unlike a fasting sugar test, it isn't affected by what you ate that morning.",
+      "advice": {
+        "high": "This is above the typical range and, if confirmed on a repeat test, may indicate diabetes or prediabetes. Please discuss this with a doctor -- they may recommend diet changes, monitoring, or medication.",
+        "borderline": "This is in the 'prediabetes' range, meaning your average blood sugar is higher than normal but not yet in the diabetes range. Diet, exercise, and weight management can often bring this back down -- a doctor can guide you.",
+        "normal": "This is within the typical healthy range.",
+        "low": "Unusually low HbA1c is uncommon and can sometimes relate to other blood conditions. Worth mentioning to a doctor."
+      }
+    },
+    {
+      "test_id": "fasting_glucose",
+      "display_name": "Fasting Blood Glucose",
+      "category": "Diabetes / Blood Sugar",
+      "aliases": ["fasting glucose", "fbs", "fasting blood sugar", "fasting blood glucose", "glucose fasting"],
+      "unit": "mg/dL",
+      "ranges": [
+        {"label": "Low", "min": 0, "max": 69, "status": "low"},
+        {"label": "Normal", "min": 70, "max": 99, "status": "normal"},
+        {"label": "Prediabetes range", "min": 100, "max": 125, "status": "borderline"},
+        {"label": "Diabetes range", "min": 126, "max": 9999, "status": "high"}
+      ],
+      "plain_language": "This measures the sugar (glucose) in your blood after fasting for at least 8 hours, typically overnight.",
+      "advice": {
+        "high": "This is above the typical fasting range. A single reading isn't a diagnosis -- your doctor will likely want a repeat test or HbA1c to confirm.",
+        "borderline": "This sits in the prediabetes range. Lifestyle changes now can often prevent progression to diabetes -- a doctor or dietitian can help build a plan.",
+        "normal": "This is within the typical healthy range.",
+        "low": "This is below the typical range. If you felt shaky, dizzy, or unwell around the test, mention that to your doctor -- low blood sugar has several possible causes."
+      }
+    },
+    {
+      "test_id": "total_cholesterol",
+      "display_name": "Total Cholesterol",
+      "category": "Lipid Profile",
+      "aliases": ["total cholesterol", "cholesterol total", "serum cholesterol"],
+      "unit": "mg/dL",
+      "ranges": [
+        {"label": "Desirable", "min": 0, "max": 199, "status": "normal"},
+        {"label": "Borderline high", "min": 200, "max": 239, "status": "borderline"},
+        {"label": "High", "min": 240, "max": 9999, "status": "high"}
+      ],
+      "plain_language": "Total cholesterol adds up the different types of fat-like substances (LDL, HDL, and part of triglycerides) circulating in your blood.",
+      "advice": {
+        "high": "This is above the desirable range. Along with your LDL/HDL breakdown, this is usually assessed together with your overall heart-disease risk factors by a doctor.",
+        "borderline": "This is a little above the ideal range. Diet, exercise, and follow-up testing are commonly advised.",
+        "normal": "This is within the desirable range.",
+        "low": "Low total cholesterol is uncommon and rarely a concern on its own, but mention it to your doctor if it's a new change."
+      }
+    },
+    {
+      "test_id": "ldl",
+      "display_name": "LDL Cholesterol ('Bad' Cholesterol)",
+      "category": "Lipid Profile",
+      "aliases": ["ldl", "ldl cholesterol", "low density lipoprotein"],
+      "unit": "mg/dL",
+      "ranges": [
+        {"label": "Optimal", "min": 0, "max": 99, "status": "normal"},
+        {"label": "Near optimal", "min": 100, "max": 129, "status": "borderline"},
+        {"label": "Borderline high", "min": 130, "max": 159, "status": "borderline"},
+        {"label": "High", "min": 160, "max": 189, "status": "high"},
+        {"label": "Very high", "min": 190, "max": 9999, "status": "high"}
+      ],
+      "plain_language": "LDL is often called 'bad' cholesterol because too much of it can build up in artery walls over time.",
+      "advice": {
+        "high": "This is above the recommended range. Your target LDL actually depends on your overall cardiovascular risk (age, blood pressure, diabetes, smoking, family history) -- a doctor can tell you your specific target.",
+        "borderline": "This is a bit above optimal. Diet (less saturated fat), exercise, and weight management are commonly recommended first steps.",
+        "normal": "This is within the optimal range.",
+        "low": "Low LDL is generally not a concern and is often the goal of treatment."
+      }
+    },
+    {
+      "test_id": "hdl",
+      "display_name": "HDL Cholesterol ('Good' Cholesterol)",
+      "category": "Lipid Profile",
+      "aliases": ["hdl", "hdl cholesterol", "high density lipoprotein"],
+      "unit": "mg/dL",
+      "ranges": [
+        {"label": "Low (higher risk)", "min": 0, "max": 39, "status": "low"},
+        {"label": "Acceptable", "min": 40, "max": 59, "status": "normal"},
+        {"label": "High (protective)", "min": 60, "max": 9999, "status": "normal"}
+      ],
+      "plain_language": "HDL is the 'good' cholesterol -- it helps carry excess cholesterol away from your arteries to your liver. Here, higher is generally better (unlike LDL).",
+      "advice": {
+        "low": "Lower HDL is associated with higher cardiovascular risk. Regular exercise is one of the most effective ways to raise HDL -- worth a chat with a doctor about your overall heart-health plan.",
+        "normal": "This is in the acceptable-to-protective range.",
+        "high": "This is in the acceptable-to-protective range.",
+        "borderline": "This is close to the lower acceptable limit -- worth keeping an eye on."
+      }
+    },
+    {
+      "test_id": "triglycerides",
+      "display_name": "Triglycerides",
+      "category": "Lipid Profile",
+      "aliases": ["triglycerides", "tg", "trig"],
+      "unit": "mg/dL",
+      "ranges": [
+        {"label": "Normal", "min": 0, "max": 149, "status": "normal"},
+        {"label": "Borderline high", "min": 150, "max": 199, "status": "borderline"},
+        {"label": "High", "min": 200, "max": 499, "status": "high"},
+        {"label": "Very high", "min": 500, "max": 99999, "status": "high"}
+      ],
+      "plain_language": "Triglycerides are a type of fat in your blood, mostly coming from the calories you eat that aren't used right away.",
+      "advice": {
+        "high": "This is above the normal range. Diet (especially sugar and alcohol), weight, and physical activity strongly influence triglycerides -- a doctor or dietitian can help.",
+        "borderline": "This is a bit above the ideal range. Reducing sugar/refined carbs and alcohol, and increasing activity, are common first steps.",
+        "normal": "This is within the normal range.",
+        "low": "Low triglycerides are rarely a concern on their own."
+      }
+    },
+    {
+      "test_id": "tsh",
+      "display_name": "TSH (Thyroid Stimulating Hormone)",
+      "category": "Thyroid",
+      "aliases": ["tsh", "thyroid stimulating hormone", "thyrotropin"],
+      "unit": "mIU/L",
+      "ranges": [
+        {"label": "Low", "min": 0, "max": 0.39, "status": "low"},
+        {"label": "Normal", "min": 0.4, "max": 4.0, "status": "normal"},
+        {"label": "High", "min": 4.01, "max": 9999, "status": "high"}
+      ],
+      "plain_language": "TSH is made by your pituitary gland and tells your thyroid how much thyroid hormone to make. It's usually the first test used to screen for thyroid problems.",
+      "advice": {
+        "high": "A high TSH often suggests an underactive thyroid (hypothyroidism), where the pituitary is 'shouting louder' because thyroid hormone levels are low. A doctor will usually also check free T4 to confirm.",
+        "normal": "This is within the normal range, suggesting your thyroid is likely functioning normally.",
+        "low": "A low TSH often suggests an overactive thyroid (hyperthyroidism). A doctor will usually also check free T4/T3 to confirm.",
+        "borderline": "This is near the edge of the normal range -- worth discussing with a doctor, especially if you have symptoms like fatigue, weight change, or palpitations."
+      }
+    },
+    {
+      "test_id": "hemoglobin",
+      "display_name": "Hemoglobin (Hb)",
+      "category": "Complete Blood Count (CBC)",
+      "aliases": ["hemoglobin", "haemoglobin", "hb"],
+      "unit": "g/dL",
+      "ranges": [
+        {"label": "Low", "min": 0, "max": 12.9, "status": "low"},
+        {"label": "Normal", "min": 13.0, "max": 17.0, "status": "normal"},
+        {"label": "High", "min": 17.01, "max": 99, "status": "high"}
+      ],
+      "plain_language": "Hemoglobin is the protein in red blood cells that carries oxygen around your body. Note: normal ranges differ for men and women -- this app uses a general adult range; your report's printed range is more specific to you.",
+      "advice": {
+        "low": "Low hemoglobin (anemia) can have many causes -- iron deficiency, vitamin B12/folate deficiency, chronic disease, and more. A doctor can order follow-up tests to find the cause.",
+        "normal": "This is within the typical healthy range.",
+        "high": "High hemoglobin can relate to dehydration, smoking, living at altitude, or less commonly other conditions. Worth discussing with a doctor if it's a new or significant change.",
+        "borderline": "This is close to the edge of the typical range."
+      }
+    },
+    {
+      "test_id": "creatinine",
+      "display_name": "Serum Creatinine",
+      "category": "Kidney Function",
+      "aliases": ["creatinine", "serum creatinine", "s creatinine"],
+      "unit": "mg/dL",
+      "ranges": [
+        {"label": "Low", "min": 0, "max": 0.59, "status": "low"},
+        {"label": "Normal", "min": 0.6, "max": 1.3, "status": "normal"},
+        {"label": "High", "min": 1.31, "max": 999, "status": "high"}
+      ],
+      "plain_language": "Creatinine is a waste product from muscle activity that your kidneys filter out of your blood. It's one of the main markers used to check kidney function.",
+      "advice": {
+        "high": "Higher creatinine can suggest reduced kidney filtering ability, but can also be affected by muscle mass, hydration, and certain medications. A doctor will often calculate eGFR alongside this for a clearer picture.",
+        "normal": "This is within the typical healthy range.",
+        "low": "Low creatinine is usually not a concern and can simply reflect lower muscle mass.",
+        "borderline": "This is close to the edge of the typical range -- worth mentioning to a doctor, especially with any other kidney-related symptoms."
+      }
+    },
+    {
+      "test_id": "alt",
+      "display_name": "ALT / SGPT (Liver Enzyme)",
+      "category": "Liver Function",
+      "aliases": ["alt", "sgpt", "alanine aminotransferase", "alanine transaminase"],
+      "unit": "U/L",
+      "ranges": [
+        {"label": "Normal", "min": 0, "max": 40, "status": "normal"},
+        {"label": "High", "min": 41, "max": 99999, "status": "high"}
+      ],
+      "plain_language": "ALT (also called SGPT) is an enzyme mostly found in liver cells. It rises in the blood when liver cells are inflamed or damaged.",
+      "advice": {
+        "high": "Elevated ALT suggests some degree of liver stress or inflammation -- common causes include fatty liver, alcohol, certain medications, or viral hepatitis. A doctor can guide further testing.",
+        "normal": "This is within the typical healthy range.",
+        "low": "Low ALT is not clinically significant.",
+        "borderline": "This is close to the edge of the typical range."
+      }
+    },
+    {
+      "test_id": "vitamin_d",
+      "display_name": "Vitamin D (25-OH)",
+      "category": "Vitamins & Minerals",
+      "aliases": ["vitamin d", "25-oh vitamin d", "25 hydroxy vitamin d", "vit d"],
+      "unit": "ng/mL",
+      "ranges": [
+        {"label": "Deficient", "min": 0, "max": 19.9, "status": "low"},
+        {"label": "Insufficient", "min": 20, "max": 29.9, "status": "borderline"},
+        {"label": "Sufficient", "min": 30, "max": 100, "status": "normal"},
+        {"label": "High", "min": 100.01, "max": 9999, "status": "high"}
+      ],
+      "plain_language": "Vitamin D helps your body absorb calcium and supports bone and immune health. It's made in your skin from sunlight and also comes from food/supplements.",
+      "advice": {
+        "low": "This is in the deficient range -- very common, especially with limited sun exposure. A doctor can recommend an appropriate supplement dose.",
+        "borderline": "This is in the 'insufficient' range -- more sunlight, diet, or a supplement may help. A doctor can advise on dosage.",
+        "normal": "This is within the sufficient range.",
+        "high": "This is above the typical range, which is uncommon and usually related to over-supplementation. Worth discussing with a doctor."
+      }
+    },
+    {
+      "test_id": "vitamin_b12",
+      "display_name": "Vitamin B12",
+      "category": "Vitamins & Minerals",
+      "aliases": ["vitamin b12", "vit b12", "b12", "cobalamin"],
+      "unit": "pg/mL",
+      "ranges": [
+        {"label": "Deficient", "min": 0, "max": 199, "status": "low"},
+        {"label": "Borderline", "min": 200, "max": 299, "status": "borderline"},
+        {"label": "Normal", "min": 300, "max": 900, "status": "normal"},
+        {"label": "High", "min": 900.01, "max": 99999, "status": "high"}
+      ],
+      "plain_language": "Vitamin B12 is essential for nerve function and making red blood cells. Deficiency is common in vegetarians/vegans and older adults.",
+      "advice": {
+        "low": "This is in the deficient range. B12 deficiency can cause fatigue, tingling, and other symptoms if untreated -- a doctor can recommend supplementation.",
+        "borderline": "This is on the lower side. Worth discussing with a doctor, especially if you have fatigue or tingling in hands/feet.",
+        "normal": "This is within the normal range.",
+        "high": "High B12 is usually not concerning and often relates to supplementation, but can occasionally be linked to other conditions -- mention it if it's unexplained."
+      }
+    }
+  ]
+}
